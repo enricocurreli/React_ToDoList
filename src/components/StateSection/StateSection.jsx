@@ -11,7 +11,7 @@ const StateSection = () => {
     const [posts, setPosts]  = useState([ ]);
     const [updated, setUpdated] = useState(false);
     const [updatedID, setUpdatedID] = useState();
-    const [complete, setComplete] = useState(false);
+
 
     const handleSubmit = (event)=>{
 
@@ -57,7 +57,6 @@ const StateSection = () => {
            
         })
 
-        setComplete(!complete)
         setPosts(postFilter)
         
     }
@@ -75,9 +74,29 @@ const StateSection = () => {
            
         })
 
-        setComplete(complete)
         setPosts(postFilter)
         
+    }
+
+    
+
+    //? update
+    //? il form deve capire quando siamo in uno stato di modifica o creazione 
+    //! Riconosce quale post dev'essere modificato
+    
+    const updatePost = (id,title,description) => {
+
+        setUpdated(!updated)
+        setUpdatedID(id)
+        if(!updated){
+            
+            setTitle(title);
+            setDescription(description);
+        } else {
+
+            setTitle('');
+            setDescription('');
+        }
     }
 
     const handleUpdatePost = (event) => {
@@ -101,26 +120,6 @@ const StateSection = () => {
         setDescription('');
         setUpdated(!updated)
     };
-
-    //? update
-    //? il form deve capire quando siamo in uno stato di modifica o creazione 
-
-    const updatePost = (id,title,description) => {
-
-        setUpdated(!updated)
-        setUpdatedID(id)
-        if(!updated){
-            
-            setTitle(title);
-            setDescription(description);
-        } else {
-
-            setTitle('');
-            setDescription('');
-        }
-    }
-
-    
 
     return (
         <>
