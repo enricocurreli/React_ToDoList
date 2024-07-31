@@ -1,0 +1,17 @@
+.penAnimation{
+    color: #FECB00;
+    animation: movePen 4s infinite;
+    animation-direction: alternate;
+    width: 100px;
+    height: 10px;
+    position: relative;
+
+}
+
+
+@keyframes movePen {
+    from {left: 35%;}
+    to {left: 60%;}
+}
+
+

@@ -1,0 +1,49 @@
+.form {
+    
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #FECB00;
+}
+
+
+
+.subtitle{
+
+    position: relative;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitle::before{
+
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    bottom: 0;
+    background: #FECB00;
+  
+}
+
+.subtitleTrue{
+
+    position: relative;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitleTrue::before{
+
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 3px;
+    bottom: 0;
+    background: #FECB00;
+  
+}

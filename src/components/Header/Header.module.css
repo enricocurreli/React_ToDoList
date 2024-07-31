@@ -1,0 +1,32 @@
+header {
+    /* background: #FECB00; */
+}
+
+.imgHeader{
+    
+    background-image: url('../../assets/header.jpg');
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+   
+.img2{
+
+    width: 350px;
+    height: 400px;
+
+}
+
+
+@media (max-width: 334px) {
+    
+
+    .img2{
+
+        width: 320px;
+        height: 300px;
+    
+    }
+
+}

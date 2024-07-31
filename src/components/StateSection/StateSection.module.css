@@ -1,0 +1,63 @@
+.subtitle{
+
+    position: relative;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitle::before{
+
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 3px;
+    bottom: 0;
+    background: #FECB00;
+  
+}
+
+.subtitleDone{
+
+    position: relative;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitleDone::before{
+
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: 0;
+    background: #FECB00;
+  
+}
+
+
+@media(max-width: 434px){
+    
+    .subtitle{
+
+        position: relative;
+        font-family: "Electrolize", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .subtitle::before{
+
+        border-radius: 100px;
+        content: "";
+        position: absolute;
+        width: 7%;
+        height: 3px;
+        bottom: 0;
+        background: #FECB00;
+      
+    }
+
+}

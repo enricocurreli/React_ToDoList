@@ -1,0 +1,10 @@
+.card {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 21rem;
+    box-shadow: 5px 7px  #FECB00 ;
+    border: 1px solid #242424;
+    background-color: rgba(245, 245, 245, 0.875) !important;
+    text-decoration: line-through;
+}

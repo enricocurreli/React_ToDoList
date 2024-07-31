@@ -1,0 +1,14 @@
+.formBtn{
+
+    border-radius: 50px !important;
+    background: #242424 !important;
+    color: white !important;
+}
+
+.formBtn:hover{
+    transition: 0.5s  !important;
+    scale: 110%  !important;
+    border-radius: 50px  !important;
+    background: white  !important;
+    color: #242424  !important;
+}
