@@ -124,32 +124,35 @@ const StateSection = () => {
 
     return (
         <>
-
-        <Form title={title} setTitle={setTitle} description={description} setDescription={setDescription} handleSubmit={handleSubmit} updated={updated} handleUpdatePost={handleUpdatePost}/>
-
-
-
-        <div className="container">
-        <div className="row my-5">
-                <div className="col-12 mt-5">
-                <h3 className= {style.subtitle}>To Do</h3>  
-                </div>
-             </div>
-            <div className="row">
+        <div className="container mt-5">
+                <div className="row">
+                    <div className="col-12 col-md-6">
+                        {/* FORM */}
+                        <Form title={title} setTitle={setTitle} description={description} setDescription={setDescription} handleSubmit={handleSubmit} updated={updated} handleUpdatePost={handleUpdatePost}/>
+                        {/* END FORM */}
+                    </div>
+                    <div className="col-12 col-md-6 mt-5">
+                        <h3 className= {"mt-2 " + style.subtitle}>To Do</h3>
+                        <div className="row mt-5">
                         {posts.sort((a,b) => b.id - a.id).map((post)=> {
                         
-                            if(post.completed == false){
+                        if(post.completed == false){
 
-                                return(
+                            return(
 
-                                    <Card key={post.id} post={post} handleDelete={handleDelete} updated={updated} updatePost={updatePost} updatedID={updatedID} handleComplete={handleComplete}/>
+                                <Card key={post.id} post={post} handleDelete={handleDelete} updated={updated} updatePost={updatePost} updatedID={updatedID} handleComplete={handleComplete}/>
 
-                                )
+                            )
+                    
+
+                        }
+                    })}</div>  
+                    </div>
+                </div>
+            <div className="row">
                         
-
-                            }
-                        })}
             </div>
+           
 
              <div className="row my-5">
                 <div className="col-12 d-flex justify-content-end">
@@ -178,3 +181,4 @@ const StateSection = () => {
 }
  
 export default StateSection;
+

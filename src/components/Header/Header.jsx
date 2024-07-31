@@ -9,7 +9,7 @@ const Header = () => {
         <header className="container-fluid mx-0">
        
                 <div className="row">
-                    <div className={"col-12 px-0 mx-0 d-flex justify-content-center align-items-center " + style.imgHeader }>
+                    <div className={"col-12 mb-5 px-0 mx-0 d-flex justify-content-center align-items-center " + style.imgHeader }>
                        <img src={header2} alt="" className={"mt-5 " + style.img2} />
                     </div>
                 </div>

@@ -23,7 +23,7 @@ const Card = ({post, handleDelete, updated, updatePost, updatedID, handleBack}) 
                         <button className='btn btn-outline-danger rounded-5 px-3 py-2' onClick={()=>handleDelete(post.id)}><FaTrashAlt /></button>
                     </div>
                     <div className="col-4">
-                        <button className='btn btn-outline-secondary rounded-5 px-3 py-2' onClick={()=> updatePost(post.id, post.title, post.description)}> {(updated && updatedID == post.id) ? <MdCancel /> : <MdOutlineCreate />}</button>
+                        <button className='btn btn-outline-secondary rounded-5 px-3 py-2' disabled onClick={()=> updatePost(post.id, post.title, post.description)}> {(updated && updatedID == post.id) ? <MdCancel /> : <MdOutlineCreate />}</button>
                     </div>
                     <div className="col-4">
                         <button className='btn btn-outline-success rounded-5 px-3 py-2' onClick={()=>handleBack(post.id)}><RiArrowGoBackFill /></button>
