@@ -5,7 +5,7 @@
 - Azioni: 
     - gestione di un form
     - operazioni CRUD 
-    - contrasegnare le attività come svolte, con possibilità di tornare allo stato precedente.
+    - contrassegnare le attività come svolte, con possibilità di tornare allo stato precedente.
     - possibilità di lasciare un voto alla pagina da parte dell'utente. 
     
 Il tutto gestito esclusivamente dal front-end.
